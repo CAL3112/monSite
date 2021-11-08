@@ -1,0 +1,109 @@
+/* 320 - 480 - 600 - 768 - 900 - 1024 - 1200 */
+
+@media screen and (max-width: 1200px) {
+
+    header{
+        transition: 1s;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .menu{
+        display: none;
+        transition: 1s;
+
+    }
+    #menu{
+        transition: 1s;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gros-titre{
+        transition: 1s;
+        font-size: 2em;
+    }
+
+    .section{
+        transition: 1s;
+        width: 900px;
+    }
+    .section-accueil1{
+        transition: 1s;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    img.moi{
+        transition: 1s;
+        width: 300px;
+    }
+    .gros-titre{
+        transition: 1s;
+        width: 500px;
+    }
+    .section{
+        transition: 1s;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section{
+        transition: 1s;
+        width: 100%;
+    }
+    .section-accueil1{
+        transition: 1s;
+        flex-direction: column-reverse;
+    }
+    .section-accueil2{
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-contact-cv{
+        transition: 1s;
+        align-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 175px;
+    }
+    .bouton{
+        transition: 1s;
+        margin: 10px 0;
+        height: 50px;
+        justify-content: center;
+    }
+    .span-bouton-contact{
+        transition: 1s;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gros-titre{
+        transition: 1s;
+        width: 80%;
+    }
+    a.logo{
+        transition: 1s;
+        margin-right: 0;
+    }
+    img.moi{
+        transition: 1s;
+        width: 50%;
+    }
+    header{
+        transition: 1s;
+        height: 80px;
+    }
+
+    .div-contact{
+        transition: 1s;
+        margin: 20px;
+    }
+}

@@ -1,0 +1,19 @@
+.section-contact{
+    display: flex;
+    justify-content: center;
+
+}
+
+.div-contact{
+    margin: 50px;
+}
+
+.div-contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+}
+
+.div-contact a:hover{
+    color: #4FB5FF;
+}

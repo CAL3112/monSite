@@ -1,0 +1,68 @@
+.section-accueil1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+}
+
+.section-accueil2{
+    margin: 0 auto;
+}
+
+.span-lucas {
+    color: #4FB5FF;
+}
+
+img.moi {
+    width: 400px;
+}
+
+.gros-titre {
+    font-size: 2.9em;
+    flex-shrink: unset;
+    width: 800px;
+    cursor: default;
+}
+
+.bouton{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #4FB5FF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-right: 35px;
+    margin-top: 50px;
+}
+
+.bouton:hover{
+    background: white;
+    color: #4FB5FF;
+}
+.btn-contact-cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.p-cv {
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: white;
+}
+
+.p-cv:hover {
+    color: #4FB5FF;
+}
+
+i.pdf {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 5px;
+    margin-right: 20px;
+}
