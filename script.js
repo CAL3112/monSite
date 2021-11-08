@@ -1,23 +1,30 @@
 var
 menu,
+test,
 menuburger;
 
 
 window.onload = function(){
 
+test = 0;
 menu = document.querySelector("#menu");
 
 menuburger = document.querySelector(".menuburger");
 
-menu.onclcik = function(){affichageMenuBurger};
+menu.onclick = function(){affichageMenuBurger();};
 
-console.log("menu : " + menu)
-console.log("menuburger : " + menuburger)
+console.log("menu : " + menu);
+console.log("menuburger : " + menuburger);
+
 
 
 
 function affichageMenuBurger(){
-    menuburger.classList.remove("hide");
+    menuburger.classList.toggle("hide");
+    test++;
+    console.log("test : " + test);
+
+
 }
 
 }

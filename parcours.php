@@ -49,7 +49,7 @@
             <tr>
                 <td>11/2019<br>11/2020</td>
                 <td>ALTEN (67)</td>
-                <td>Ingénieur d'études en conception mécanique chez le client Baumert (Schaeffesheim)</td>
+                <td>Ingénieur d'études en conception mécanique chez le client Baumert</td>
             </tr>
             <tr>
                 <td>01/2019<br>07/2019</td>

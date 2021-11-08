@@ -17,10 +17,10 @@
 		
 		<nav class="hide menuburger">
 			<ul>
-				<li><a href="index.php?page=parcours">Mon parcours</a></li>
-				<li><a href="index.php?page=experiences">Mes expériences professionnelles</a></li>
-				<li><a href="index.php?page=competences">Mes compétences</a></li>
-				<li><a href="index.php?page=contact">Me contacter</a></li>
+				<li class="li-menuburger"><a href="index.php?page=parcours">Mon parcours</a></li>
+				<li class="li-menuburger"><a href="index.php?page=competences">Mes compétences</a></li>
+				<li class="li-menuburger"><a href="index.php?page=projets">Projets réalisés</a></li>
+				<li class="li-menuburger"><a href="index.php?page=contact">Me contacter</a></li>
 			</ul>
 		</nav>
 		
