@@ -12,7 +12,7 @@
 			</ul>
 		</nav>
         
-            <i id="menu" class="fas fa-bars"></i>
+            <i id="menu" onclick="rotate(360deg)" class="fas fa-bars"></i>
         
 		
 		<nav class="menuburger">
