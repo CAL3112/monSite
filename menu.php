@@ -15,7 +15,7 @@
             <i id="menu" class="fas fa-bars"></i>
         
 		
-		<nav class="hide menuburger">
+		<nav class="menuburger">
 			<ul>
 				<li class="li-menuburger"><a href="index.php?page=parcours">Mon parcours</a></li>
 				<li class="li-menuburger"><a href="index.php?page=competences">Mes compétences</a></li>

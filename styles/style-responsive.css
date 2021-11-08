@@ -10,15 +10,14 @@
 
     .menu{
         display: none;
-        transition: 1s;
-
     }
     #menu{
-        transition: 1s;
         display: flex;
         justify-content: space-between;
     }
-
+    .menuburger{
+        display: block;
+    }
     .gros-titre{
         transition: 1s;
         font-size: 2em;
