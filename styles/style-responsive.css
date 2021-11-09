@@ -15,14 +15,10 @@
         display: flex;
         justify-content: space-between;
     }
-    .menuburger{
-        /* display: block; */
-    }
     .gros-titre{
         transition: 1s;
         font-size: 2em;
     }
-
     .section{
         transition: 1s;
         width: 900px;
