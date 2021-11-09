@@ -19,14 +19,10 @@ menuburger.style.marginRight = "-450px";
 function affichageMenuBurger(){
     if (menuburger.style.marginRight == "-450px") {
         menuburger.style.marginRight = "0px";
-        // menuburger.style.display = "block";
-        menuburger.style.opacity = "1";
+        menuburger.style.display = "block";
         } else {
         menuburger.style.marginRight = "-450px";
-        // menuburger.style.display = "none";
-        menuburger.style.opacity = "0";
-
-
+        menuburger.style.display = "none";
         } 
             
 };
