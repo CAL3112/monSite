@@ -1,6 +1,3 @@
-<header>
-
-
 		<a class="logo" href="index.php">Lucas</a>
 
 		<nav class="menu">
@@ -12,9 +9,8 @@
 			</ul>
 		</nav>
         
-            <i id="menu" onclick="rotate(360deg)" class="fas fa-bars"></i>
+            <i id="menu" class="fas fa-bars"></i>
         
-		
 		<nav class="menuburger">
 			<ul>
 				<li class="li-menuburger"><a href="index.php?page=parcours">Mon parcours</a></li>
@@ -23,6 +19,3 @@
 				<li class="li-menuburger"><a href="index.php?page=contact">Me contacter</a></li>
 			</ul>
 		</nav>
-		
-
-</header>

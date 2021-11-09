@@ -16,7 +16,7 @@
         justify-content: space-between;
     }
     .menuburger{
-        display: block;
+        /* display: block; */
     }
     .gros-titre{
         transition: 1s;
