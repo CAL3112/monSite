@@ -30,6 +30,13 @@
     .table-comp-dev tr td:first-child{
         display: none;
     }
+    a.logo:hover {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        color: black;
+        }
+    nav ul li a:hover::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px) {
