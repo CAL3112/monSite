@@ -47,6 +47,10 @@
     margin: auto 0;
 }
 
+.table-comp-dev td tr:last-child{
+    text-align: center;
+}
+
 progress{
     margin-right: 20px;
     width: 150px;
