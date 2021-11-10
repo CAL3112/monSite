@@ -9,12 +9,12 @@
         <table class="table-comp-dev">
             <tr>
                 <td><i class="fab fa-html5 i-comp-dev"></i></td>
-                <td>HTML 5</td>
+                <td>HTML5</td>
                 <td><progress id="file" max="100" value="95"></progress>95%</td>
             </tr>
             <tr>
                 <td><i class="fab fa-css3-alt i-comp-dev"></i></td>
-                <td>CSS 3</td>
+                <td>CSS3</td>
                 <td><progress id="file" max="100" value="90"></progress>90%</td>
             </tr>
             <tr>
@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td><i class="fab fa-js-square i-comp-dev"></i></td>
-                <td>Java Script</td>
+                <td>JavaScript</td>
                 <td><progress id="file" max="100" value="50"></progress>50%</td>
 
             </tr>

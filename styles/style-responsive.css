@@ -27,6 +27,9 @@
         transition: 1s;
         margin-bottom: 15px;
     }
+    .table-comp-dev tr td:first-child{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -42,6 +45,13 @@
     .section{
         transition: 1s;
         width: 700px;
+    }
+    .section-competences{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col{
+        width: 80%;
     }
 }
 
@@ -95,9 +105,20 @@
         transition: 1s;
         height: 80px;
     }
-
+    .menuburger{
+        top: 80px;
+    }
     .div-contact{
         transition: 1s;
         margin: 20px;
+    }
+    .section-competences{
+        width: 100%;
+    }
+    .col{
+        padding: 0 5px;
+    }
+    progress{
+        width: 40%;
     }
 }
