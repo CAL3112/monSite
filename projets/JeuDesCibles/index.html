@@ -53,7 +53,7 @@
 
     var 
     tempsDeJeu = 30,
-    frequenceApparition = 1000,
+    frequenceApparition = 100,
     compteur = tempsDeJeu,
     compteurCible,
     compteurCibleTouchee,
@@ -148,12 +148,12 @@
 
             if(compteur >= 0){
                 posleft = Math.random()*100
-                if (posleft < 10) posleft = 10
-                if (posleft > 90) posleft = 90
+                if (posleft < 20) posleft = 20
+                if (posleft > 80) posleft = 80
                 cible.style.left = posleft + "%"
                 postop  = Math.random()*100
-                if (postop < 30) postop = 30
-                if (postop > 90) postop = 90 
+                if (postop < 40) postop = 40
+                if (postop > 80) postop = 80 
                 cible.style.top = (postop) + "%"
                 compteurCible++;
                 } else {
