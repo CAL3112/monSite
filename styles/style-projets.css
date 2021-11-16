@@ -11,3 +11,15 @@
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+.div-lien-projet{
+    width: 20%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-text-projet{
+    width: 80%;
+}
