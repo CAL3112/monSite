@@ -1,0 +1,159 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+@keyframes flottement {
+    from { transform:translateY(6px)}
+    to { transform:translateY(-6px)}
+}
+
+#parametre{
+    position: absolute;
+    font-size: 50px;
+    top: 5%;
+    left: 95%;
+    cursor: pointer;
+}
+.start{
+    
+    display: flex;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -125px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;   
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+    cursor: pointer;
+    animation: flottement infinite linear alternate 0.7s;
+}
+
+.start:hover{
+    transition: 0.4s;
+    background-color: rgb(49, 49, 49);
+}
+
+.affichage-du-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: skyblue;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 2%;
+    display: none;
+}
+
+.cible{
+    transition:background-color 0.2s;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: none;
+    margin-left: -40px;
+    margin-top: -40px;
+    top: 50%;
+    left: 50%;
+    cursor: crosshair;
+
+}
+
+.cibleTouchee{
+    transition: 0.5s;
+    height: 0px;
+}
+
+.zone-de-jeu{
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    z-index: -10;
+    margin: -40px;
+    display: none;
+    cursor: crosshair;
+}
+
+#idCible{
+    display: none;
+}
+
+.affichage_parametre{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: lightblue;
+
+}
+
+.show{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temps{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 5px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+.flex  {
+    display: flex;
+}
+.valider{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 35px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px 5px;
+    color: white;
+    background-color: black;
+}
+
+.selected{
+    background-color: black;
+    color: white;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu des cibles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="start">
+        <h1>GO</h1>
+    </div>
+
+        <i id="parametre" class="fas fa-cog"></i>
+
+    <div class="affichage-du-score hide">
+        <h1>Vous êtes prêt ?</h1>
+        <h2></h2>
+    </div>
+    
+    
+        <img id="idCible" src="cible.svg" alt="cible">
+    
+    <div class="zone-de-jeu"></div>
+
+    <div class="affichage_parametre">
+                    <h2>Temps de jeu</h2>
+
+        <div class="flex">
+            <div class="temps un">15s</div>
+            <div class="temps deux">30s</div>
+            <div class="temps trois">45s</div>
+            <div class="temps quatre">60s</div>
+        </div>
+        <h2>Vitesse des cibles</h2>
+
+        <div class="flex">
+            <div class="temps rapide">1s</div>
+            <div class="temps normal">2s</div>
+            <div class="temps lent">3s</div>
+        </div>
+        <div class="valider">Valider</div>
+       
+    </div>
+
+</body>
+
+<script type="text/javascript">
+
+    var 
+    tempsDeJeu = 30,
+    frequenceApparition = 1000,
+    compteur = tempsDeJeu,
+    compteurCible,
+    compteurCibleTouchee,
+    vitesseCible = frequenceApparition,
+    start,
+    affichage,
+    score,
+    message,
+    cible,
+    resultat = 0,
+    posleft, postop,
+    zoneJeu,fct_comp,
+    parametre,
+    panneauPara,
+    un, deux, trois, quatre, rapide, normal, lent, valider,
+    fct_cible_apparition;
+
+    start = document.querySelector('.start');
+    affichage = document.querySelector('.affichage-du-score');
+    cible = document.querySelector('#idCible');
+    zoneJeu = document.querySelector('.zone-de-jeu');
+
+    start.onclick = function(){jeuDesCibles();};
+    cible.onclick = function(){cibleTouchee();};
+
+
+    parametre = document.querySelector("#parametre");
+    panneauPara = document.querySelector(".affichage_parametre");
+    un = document.querySelector('.un');
+    deux = document.querySelector('.deux');
+    trois = document.querySelector('.trois');
+    quatre = document.querySelector('.quatre');
+    rapide = document.querySelector('.rapide');
+    normal = document.querySelector('.normal');
+    lent = document.querySelector('.lent');
+    valider = document.querySelector('.valider');
+
+    un.onclick = function(){tempsDeJeu = 15; un.classList.add("selected");deux.classList.remove("selected");trois.classList.remove("selected");quatre.classList.remove("selected");};
+
+    deux.onclick = function(){tempsDeJeu = 30; un.classList.remove("selected");deux.classList.add("selected");trois.classList.remove("selected");quatre.classList.remove("selected");};
+
+    trois.onclick = function(){tempsDeJeu = 45; un.classList.remove("selected");deux.classList.remove("selected");trois.classList.add("selected");quatre.classList.remove("selected");};
+
+    quatre.onclick = function(){tempsDeJeu = 60; un.classList.remove("selected");deux.classList.remove("selected");trois.classList.remove("selected");quatre.classList.add("selected");};
+
+    rapide.onclick = function(){frequenceApparition = 1000;rapide.classList.add("selected");normal.classList.remove("selected");lent.classList.remove("selected");};
+    normal.onclick = function(){frequenceApparition = 2000;rapide.classList.remove("selected");normal.classList.add("selected");lent.classList.remove("selected");};
+    lent.onclick = function(){frequenceApparition = 3000;rapide.classList.remove("selected");normal.classList.remove("selected");lent.classList.add("selected");};
+    valider.onclick = function(){panneauPara.classList.add("hide");panneauPara.classList.remove("show");clearInterval(fct_cible_apparition);clearInterval(fct_comp);jeuDesCibles();};
+    parametre.onclick = function(){panneauPara.classList.add("show");panneauPara.classList.remove("hide");}
+
+    function jeuDesCibles(){
+
+        compteur = tempsDeJeu;
+        vitesseCible = frequenceApparition,
+        compteurCible = 0;
+        compteurCibleTouchee = 0;
+        start.style.display = "none";
+        affichage.style.display = "flex";
+        zoneJeu.style.display = "block";
+        cible.classList.remove('cibleTouchee');
+        
+        fct_comp = setInterval(
+            function(){
+                
+            if(compteur >= 0){
+            affichage.innerHTML = "Temps restant : "+ compteur+"<br>"+"<h1>SCORE : "+compteurCibleTouchee+" / "+compteurCible+"</h1>";
+            compteur--;
+            resultat = (compteurCibleTouchee/compteurCible);
+            if(resultat == 0){message = "NUL !"}
+            if(resultat > 0 && resultat <= 0.2){message = "BOF !"}
+            if(resultat > 0.2 && resultat <= 0.4){message = "Pas térrible !"}
+            if(resultat > 0.4 && resultat <= 0.6){message = "C'est moyen !"}
+            if(resultat > 0.6 && resultat <= 0.8){message = "Pas mal !"}
+            if(resultat > 0.8 && resultat < 1){message = "Bravo presque parfait !"}
+            if(resultat == 1){message = "Parfait, c'est un sans faute, félicitation!"}
+ 
+            } else {
+                clearInterval(fct_comp);
+                if(confirm("Votre score est de : "
+                +compteurCibleTouchee+" / "+compteurCible+
+                "\n"+message+"\nVoulez-vous réessayer ?")){    
+                jeuDesCibles();}
+                };},1000
+        );
+
+        fct_cible_apparition = setInterval(
+            function(){
+            cible.style.display = "block";
+            cible.classList.add('cible');
+            cible.classList.remove('cibleTouchee');
+
+            if(compteur >= 0){
+                posleft = Math.random()*100
+                if (posleft < 10) posleft = 10
+                if (posleft > 90) posleft = 90
+                cible.style.left = posleft + "%"
+                postop  = Math.random()*100
+                if (postop < 30) postop = 30
+                if (postop > 90) postop = 90 
+                cible.style.top = (postop) + "%"
+                compteurCible++;
+                } else {
+                    clearInterval(fct_cible_apparition);
+                    cible.style.display = "none";
+                }
+
+            }, vitesseCible
+        );
+        console.log("temps : "+tempsDeJeu )
+        console.log("vitesse : "+frequenceApparition )
+
+    }
+
+    function cibleTouchee(){
+        cible.classList.add('cibleTouchee');
+        compteurCibleTouchee++;
+    }
+
+    
+
+</script>
+
+</html>

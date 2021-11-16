@@ -9,7 +9,7 @@
         <i>Ce projet de groupe consistait à créer un site vitrine statique pour une activité de coaching en développement personnel, il m'a permis de mettre en application les compétences aquise en HTML et CSS lors de ma remise à niveau.<br><br>(04/2021)</i>
     </p>
 
-    <a href="" target="_blank">CatherineCourretCoaching</a>
+    <a href="lucasmichel.info/.projets/catherine" target="_blank">CatherineCourretCoaching</a>
 </div>
 
 <div class="div-projet">
@@ -31,7 +31,7 @@
 
 <div class="div-projet">
     <p>
-        <b>Réalisation d'un site dynamique (partie back-end) gestion de données et administration</b><br><br>
+        <b>Gestion de données et administration</b><br><br>
         <i><br><br>(09/2021)</i>
     </p>
     <a href="" target="_blank">Gestion des cochons</a>
