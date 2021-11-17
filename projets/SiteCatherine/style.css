@@ -1,0 +1,458 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Dancing+Script:wght@500&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+html{
+	scroll-behavior: smooth;/*pour que le clic sur un boutton nous ramène doucement vers la partie concerné de façon fluide*/
+}
+
+*{
+	margin: 0;
+	padding: 0;
+
+	
+}
+
+
+#haut{
+	background-image: url('images/back4.jpg');
+	background-size:100%;
+}
+
+header{
+	background: rgb(255, 255, 255);
+	color: #ffffff; /* le color en principe sert à changer la couleur du texte */
+	padding-top: 30px;
+	min-height: 120px;
+	width: 100%;
+	position: fixed;
+	z-index:300;
+}
+
+header a{
+	color: black;
+}
+
+
+#haut h1{
+	margin-top: 450px;
+	color: #d60620;
+	text-align: center;
+	font-size: 2.2em;
+}
+
+#phrase h1{
+	background-color: rgb(255, 255, 255, 0.65);
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+
+#menu{
+	/*border: solid black;*/
+	padding: 45px;
+	margin:0 auto;
+	width: 100%;
+	position: fixed;
+	background-color: rgb(255, 255, 255, 0.9);/*rgb(0, 0, 0, 0.2);*/
+}
+
+
+
+#menu a{
+	text-decoration: none;
+	color: black;
+	padding: 6px;
+	font-family: /*Arial, sans-serif*/roboto;
+}
+
+#menu li{
+	list-style-type: none; /*permet de retirer le soulignement des "li" */
+	display: inline;
+}
+
+#log{
+	margin-right: 100px;
+	float: left;
+	margin-top: -30px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#element_menu{
+	margin-right: 50px;
+}
+
+
+#element_menu li{
+	margin-right: 45px;
+	float: right;
+}
+
+#element_menu a:hover{
+	border-radius: 5px;
+	background-color: rgb(214,6,32,0.8)/*rgb(250,0,0,0.7); /*#7f7f7f;*/;
+	opacity: 100%;
+	color: white;
+	transition: 1s;
+}
+
+#element_menu a{
+	font-size: 1.5em;
+}
+
+
+
+ /**** Preésentation des cibles ****/
+
+
+#prospect{
+ 	margin-top: 100px;
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ #prospect a{
+ 	color: #d60620;
+ 	font-family: /*Arial, sans-serif*/Roboto;
+ }
+
+#ou{
+	margin-top: 200px
+}
+
+ .slider{
+ 	width: 500px;
+ 	overflow: hidden;
+ }
+
+ .slides_ent{
+ 	width: calc(500px * 4); /* permet de faire le calcule de la taille des images pour les alignées 
+ 							les une après les autres quelque soit la taille de l'écran*/
+ 	animation: glisse_gauche 10s infinite;
+ }
+
+ .slides_part{
+ 	width: calc(500px * 4); /* permet de faire le calcule de la taille des images pour les alignées 
+ 							les une après les autres quelque soit la taille de l'écran*/
+ 	animation: glisse_droite 12s infinite;
+ }
+
+
+ .slide{
+ 	float: left; /* pour faire floter chaque image*/
+ }
+
+ 
+
+ #entreprises h3{
+ 	margin-right: 45px;
+ 	text-align: center;
+ 	font-size: 1.2em;
+ }
+
+#entreprises p{
+	width: 530px;
+}
+
+#particuliers{
+	margin-left: 45px;
+}
+
+ #particuliers h3{
+ 	margin-top: -10px;
+ 	text-align: center;
+ 	font-size: 1.2em;
+ }
+
+ #particuliers{
+ 	width: 530px;
+ }
+
+ #choix{
+ 	width: 85%;
+ 	margin-top: 80px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	text-align: center;
+ 	font-size: 1.35em;
+}
+
+#choix a{
+ 	color: #d60620;
+ 	font-family: /*Arial, sans-serif*/ Roboto;
+}
+
+ /***** le texte de motivation ****/
+
+ #texte_de_motivation{
+ 	margin-left: 100px;
+ 	display: inline-flex;
+ 	margin-top: 100px;
+ }
+
+#texte_motivation{
+	border-left: 4px solid #d60620;
+	padding-left: 50px;
+	height: 170px;
+	margin-left: 50px;
+}
+
+#texte_motivation p{
+ 	font-size: 1.5em;
+ 	width: 600px;
+ }
+
+ #delevoppement{
+ 	text-align: center;
+ }
+
+ #delevoppement h2{
+ 	font-size: 2.4em;
+ }
+
+#delevoppement h1{
+	font-size: 2.6em;
+}
+
+/** Pour faire glisser à gauche **/
+
+ @keyframes glisse_gauche{ /*on divise 100 par le nombre d'image pour obtenir les % */
+ 	0%{
+ 		transform: translateX(0);
+ 	}
+
+ 	10%{
+ 		transform: translateX(0); /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	25%{
+ 		transform: translateX(-500px);
+ 	}
+
+ 	35%{
+ 		transform: translateX(-500px);   /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	50%{
+ 		transform: translateX(-1000px);
+ 	}
+
+ 	60%{
+ 		transform: translateX(-1000px);  /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	75%{
+ 		transform: translateX(-1500px);
+ 	}
+
+ 	85%{
+ 		transform: translateX(-1500px);  /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	100%{
+ 		transform: translateX(0);
+ 	}
+ }
+
+
+ /*** glisse à droite ***/
+
+
+ @keyframes glisse_droite{ /*on divise 100 par le nombre d'image pour obtenir les % */
+ 	0%{
+ 		transform: translateX(0);
+ 	}
+
+ 	10%{
+ 		transform: translateX(0); /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	25%{
+ 		transform: translateX(-500px);
+ 	}
+
+ 	35%{
+ 		transform: translateX(-500px);   /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	50%{
+ 		transform: translateX(-1000px);
+ 	}
+
+ 	60%{
+ 		transform: translateX(-1000px);  /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	75%{
+ 		transform: translateX(-1500px);
+ 	}
+
+ 	85%{
+ 		transform: translateX(-1500px);  /*Pour qu'il y est une pause entre chaque image*/
+ 	}
+
+ 	100%{
+ 		transform: translateX(0);
+ 	}
+ }
+
+
+ /**** Presentation de Cath ****/
+
+ #qsj{
+ 	font-size: 2.6em;
+ 	color: #d60620;
+ 	margin-right: 600px;
+ 	font-family: 'Quicksand', sans-serif;
+ 	justify-content: center;
+ 	display: flex;
+ }
+
+#cath{
+	background-color:/*rgb(41, 49, 51, 0.9) /*rgb(250, 204, 209, 0.6)/*rgb(41, 49, 51);*/  /*rgb(211,211,211,0.3);*/;
+	width: 100%;
+	margin: 80px auto;
+}
+
+ #presentation{
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+
+
+
+ #texte_cath {
+ 	width: 600px;
+ 	padding-top: 50px;
+ 	padding-left: 40px;
+ 	padding-right: 40px;
+ 	font-size: 1.2em;
+ 	background-color: #071A2C;
+ }
+
+  #texte_cath p{
+  	color: white;
+  	font-family: /*Arial, sans-serif*/ Roboto;
+  	text-align: justify;
+  }
+
+
+
+
+/***** les services ******/
+
+.presentation_services{
+	font-size: 2.6em;
+ 	color:#d60620;
+ 	margin-left: 30px;
+ 	font-family: 'Quicksand', sans-serif;
+ 	text-align: center;
+ 	margin-top: 100px;
+ 	margin-bottom: 100px;
+}
+
+
+#servicesG{
+	background-color: #071A2C; /*rgb(41, 49, 51); /*rgb(128,128,128)*/
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+
+/******* Service 1 *****/
+
+.service1{
+	display: flex;
+	justify-content: center;
+}
+
+.service1 img{
+	margin-right: 50px;
+}
+
+
+.text_service{
+	margin-top: 30px;
+	width: 500px;
+}
+
+.text_service p{
+	font-size: 1.3em;
+	color: white;
+	font-family: /*Arial, sans-serif*/Roboto;
+	text-align: justify;
+}
+
+#coach{
+	margin-top: 80px;
+}
+
+.text_service h1{
+	font-size: 2.5em;
+	color: white /*#d60620*/;
+	text-align: center;
+}
+
+.text_service a{
+	color: rgb(206,206,206);
+	font-size: 1.2em;
+}
+
+/***** Service 2 *****/
+
+.service2{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.text_service{
+	margin-right: 50px;
+}
+
+
+/**** Pieds de page ****/
+
+footer{
+	margin-top: 50px;
+	background-color: rgb(21, 21, 21);/*font de la partie me contacter*/
+	color: #FFFAE1; /*Change la couleur de "Me contacter"*/
+	padding: 10px 0 10px 0; /*20 en Haut, 10 en bas, 0 sur les cotés*/
+	text-align: center;
+}
+
+#Trait{
+	height: 1px;
+	width: 75%;
+	background-color: #FFFAE1;
+	margin: 40px auto;
+}
+#copyrightIcons{
+	display: flex;
+	padding: 0 12%;
+	font-size: 1.2em;
+}
+#icons{
+	width: 80%;
+	text-align: right;
+}
+
+#icons a{
+	color: #FFFAE1;
+	margin-right: 20px;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#lien_haut_page a{
+	font-size: 1.2em;
+}

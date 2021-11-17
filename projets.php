@@ -10,10 +10,10 @@
         </p>
 
     </div>
-    <div class="div-lien-projet"><a class="lien-projet" href="lucasmichel.info/.projets/catherine" target="_blank">Voir le site</a></div>
+    <div class="div-lien-projet"><a class="lien-projet" href="projets/SiteCatherine/index.html" target="_blank">Voir le site</a></div>
 </div>
 
-<div class="div-projet">
+<!-- <div class="div-projet">
     <div class="div-text-projet">
         <p>
             <b>Réalisation d'une maquette pour un club de handball en utilisant le logiciel Figma</b><br><br>
@@ -21,10 +21,9 @@
         </p>
     </div>
     <div class="div-lien-projet"><a class="lien-projet" href="" target="_blank">Vidéo de démonstration</a>
-</div>
-    
+    </div> 
 
-</div>
+</div> -->
 
 <div class="div-projet">
     <div class="div-text-projet">
@@ -43,7 +42,7 @@
             <i><br><br>(10/2021)</i>
         </p>
     </div>
-        <div class="div-lien-projet"><a class="lien-projet" href="" target="_blank">Gestion des cochons</a></div>
+        <div class="div-lien-projet"><a class="lien-projet" href="projets/GestionDesCochon/index.php" target="_blank">Gestion des cochons</a></div>
 </div>
 
 <h1>D'autres projets sont en cours <i class="fas fa-sync-alt loading"></i></i></h1>
