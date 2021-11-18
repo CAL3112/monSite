@@ -16,7 +16,7 @@
 				Contact<span class="span-bouton-contact">ez-moi!</span>
             </a>
 		
-			<a class="bouton" href="CV/CV_MICHEL_Lucas_2021.09.09.pdf" target="_blank">
+			<a class="bouton" href="CV/CV_MICHEL_Lucas.pdf" target="_blank">
 				<i class="far fa-file-pdf pdf"></i>Mon CV
             </a>
 		</div>

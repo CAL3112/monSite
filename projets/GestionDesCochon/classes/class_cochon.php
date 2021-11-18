@@ -26,7 +26,7 @@ class cochon{
         return $result[0][0];
     }
 
-    function SelectAll($sexe = "%", $order = "created_at", $sort = "DESC", $depart, $nbaffichage){
+    function SelectAll($sexe, $order, $sort, $depart, $nbaffichage){
         $conn  =  new BDD();
         $req = "SELECT * FROM ".$this->tbl." WHERE (deleted_at IS NULL OR deleted_at = '000-00-00 00:00:00') AND `sexe` LIKE '".$sexe."' ORDER BY `".$order."` ".$sort." LIMIT ".$depart.", ".$nbaffichage."";  
         return $res = $conn->query($req);
