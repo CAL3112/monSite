@@ -3,7 +3,7 @@
 
 class BDD {
 
-    var $host = "5.196.14.36";
+    var $host = "localhost";
     var $user = "lucas";
     var $pasw = "lucas2021*";
     var $dbname = "cochon";
