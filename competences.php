@@ -26,7 +26,7 @@
             <tr>
                 <td><i class="fab fa-js-square i-comp-dev"></i></td>
                 <td>JavaScript</td>
-                <td><progress id="file" max="100" value="50"></progress>50%</td>
+                <td><progress id="file" max="100" value="60"></progress>60%</td>
 
             </tr>
             <tr>
@@ -57,12 +57,12 @@
             <tr>
                 <td><img src="images/ajax%20logo.png" alt="logo ajax" class="img-logo-ajax"></td>
                 <td>AJAX</td>
-                <td><progress id="file" max="100" value="30"></progress>30%</td>
+                <td><progress id="file" max="100" value="40"></progress>40%</td>
             </tr>
             <tr>
                 <td><img src="images/jquery.png" alt="logo ajax" class="img-logo-ajax"></td>
                 <td>JQuery</td>
-                <td><progress id="file" max="100" value="30"></progress>30%</td>
+                <td><progress id="file" max="100" value="40"></progress>40%</td>
             </tr>
 
         </table>
@@ -77,7 +77,7 @@
             <tr>
                 <td><i class="fab fa-wordpress"></i></td>
                 <td>WordPress</td>
-                <td><progress id="file" max="100" value="70"></progress>70%</td>
+                <td><progress id="file" max="100" value="60"></progress>60%</td>
             </tr>
             <tr>
                 <td><i class="fab fa-drupal"></i></td>
