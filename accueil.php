@@ -3,7 +3,7 @@
 		<h2 class="gros-titre">
             Bonjour,<br>
             Je suis <span class="span-lucas">Lucas</span> MICHEL<br>
-            Développeur Web
+            Développeur d'Application
         </h2>
 		<img src="images/moi-cercle.png" alt="photo de profil" class="moi">
 		
