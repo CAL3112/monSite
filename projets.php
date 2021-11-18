@@ -1,5 +1,5 @@
 <h1 class="page">Projets</h1>
-
+<p class="info-responsive">La plupart de ces projets ont été conçu pour un affichage sur ordinateur, l'affichage sur tablette ou mobile peut être non adapté.</p>
 <section class="section section-projet">
 
 <div class="div-projet">

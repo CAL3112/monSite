@@ -43,6 +43,9 @@
     nav ul li a:hover::after {
         display: none;
     }
+    .info-responsive{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1024px) {

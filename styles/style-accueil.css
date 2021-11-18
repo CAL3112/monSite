@@ -66,3 +66,8 @@ i.pdf {
     margin: 5px;
     margin-right: 20px;
 }
+.info-responsive{
+    display: none;
+    font-size: 9px;
+    text-align: center;
+}
