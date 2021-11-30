@@ -21,7 +21,7 @@
         </p>
     </div>
     <div class="div-colonne">
-    <div class="div-lien-projet2"><a class="lien-projet" href="https://www.figma.com/proto/YnXJAQrwOhJui65cLOUIIO/PRINCIPALE?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=407%3A8552" target="_blank">Maquette PC</a>
+    <div class="div-lien-projet2"><a class="lien-projet" href="https://www.figma.com/proto/YnXJAQrwOhJui65cLOUIIO/PRINCIPALE?node-id=313%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=407%3A8552" target="_blank">Maquette PC</a>
     </div>
     <div class="div-lien-projet2"><a class="lien-projet" href="https://www.figma.com/proto/YnXJAQrwOhJui65cLOUIIO/PRINCIPALE?node-id=385%3A332&scaling=scale-down&page-id=357%3A200&starting-point-node-id=412%3A2028" target="_blank">Maquette Mobile</a>
     </div>
