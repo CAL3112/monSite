@@ -27,7 +27,7 @@ if(isset($_GET['sexe'])) {
     $sexe = $_GET['sexe'];
 } else {
     $sexe = "%";
-    $_GET['sexe'] = "%";
+    $_GET['sexe']="%";
 }
 
 $Obj_cochon = new cochon("empty");
@@ -160,7 +160,7 @@ $cochonne = ($Obj_cochon->SelectAll("Femelle", $order, $sort, $decalage, $nbaffi
 
         <form action="" method="POST"> <!--  Génération de cochons aléatoires -->
             Génération de cochon :
-            <input type="number" name="nombre_cochon" value="">
+            <input type="number" min="1" max="100" name="nombre_cochon" value="">
             <input class="btn btn-success bouton" name="gen_cochon" type="submit" value="Générer">
 
         </form>
