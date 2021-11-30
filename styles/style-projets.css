@@ -21,6 +21,17 @@
     border-radius: 15px;
 }
 
+.div-lien-projet2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.div-lien-projet2:last-child{
+  margin-top: 20px;
+}
 .div-text-projet{
     width: 80%;
 }
@@ -34,7 +45,11 @@
     background-color: #4FB5FF;
     border-radius: 15px;
 }
-
+.div-colonne{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+}
 
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -74,3 +89,4 @@
     -o-animation: rotating 1.5s linear infinite;
     animation: rotating 1.5s linear infinite; 
 }
+
