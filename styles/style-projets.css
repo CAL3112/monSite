@@ -50,7 +50,9 @@
   width: 20%;
   flex-direction: column;
 }
-
+.projets-en-cours{
+  width: 100%;
+}
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
     from {

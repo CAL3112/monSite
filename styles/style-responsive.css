@@ -116,6 +116,15 @@
         min-width: none;
         width: 50%;
     }
+    .div-colonne{
+        max-width: 250px;
+        min-width: none;
+        width: 50%;
+    }
+    .projets-en-cours{
+        width: 80%;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -153,6 +162,10 @@
         transition: 1s;
         width: 40%;
     }
+    .projets-en-cours{
+        width: 90%;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -161,5 +174,10 @@
         transition: 1s;
         width: 0%;
     }
-
+    .div-colonne{
+        width: 80%;
+    }
+    .div-lien-projet{
+        width: 80%;
+    }
 }

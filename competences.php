@@ -10,7 +10,7 @@
             <tr>
                 <td><i class="fab fa-html5 i-comp-dev"></i></td>
                 <td>HTML5</td>
-                <td><progress id="file" max="100" value="95"></progress>95%</td>
+                <td><progress id="file" max="100" value="90"></progress>90%</td>
             </tr>
             <tr>
                 <td><i class="fab fa-css3-alt i-comp-dev"></i></td>
@@ -20,7 +20,7 @@
             <tr>
                 <td><i class="fab fa-php i-comp-dev"></i></td>
                 <td>PHP</td>
-                <td><progress id="file" max="100" value="80"></progress>85%</td>
+                <td><progress id="file" max="100" value="80"></progress>80%</td>
 
             </tr>
             <tr>
@@ -32,12 +32,12 @@
             <tr>
                 <td><img src="images/SQL.png" alt="logo sql" class="img-logo-ajax"></td>
                 <td>MySQL</td>
-                <td><progress id="file" max="100" value="90"></progress>90%</td>
+                <td><progress id="file" max="100" value="80"></progress>80%</td>
 
             </tr>
             <tr>
                 <td><i class="fab fa-java i-comp-dev"></i></td>
-                <td>Java</td>
+                <td>Java (126h à venir)</td>
                 <td><progress id="file" max="100" value="0"></progress>0%</td>
 
             </tr>
